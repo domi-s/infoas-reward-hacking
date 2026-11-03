@@ -1,2 +1,12 @@
 # Runs should not be committed
 /runs/*
+
+# Secrets, environment variables, tokens
+.env
+infoas_token.py
+
+# Cache files
+*.pyc
+*.pyo
+*.pyd
+**/__pycache__/**
