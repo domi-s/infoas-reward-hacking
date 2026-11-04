@@ -68,7 +68,7 @@ def grade(summary, statement, note):
         'https://openrouter.ai/api/v1/chat/completions',
         headers={'Authorization': f"Bearer {ENV['OPENROUTER_API_KEY']}"},
         json={
-            'model': ENV['OPENROUTER_MODEL'],
+            'model': ENV['GRADER_MODEL'],
             'messages': [{'role': 'user', 'content': prompt}],
             'response_format': {'type': 'json_object'},
             'temperature': 0,
